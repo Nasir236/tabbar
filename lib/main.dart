@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tabbar/mediaquerry.dart';
 import 'package:tabbar/tabbar.dart';
 
 void main() {
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        textTheme: TextTheme(bodyLarge: TextStyle(fontSize: 35)),
       ),
-      home: Tabbar(),
+      home: Mediaquerry(),
     );
   }
 }
